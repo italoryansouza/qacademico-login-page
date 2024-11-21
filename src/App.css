@@ -1,38 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=McLaren&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw; 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.left-box {
+  background: linear-gradient(270deg, #1C5E27, #3AC451);
+  width: 67%;
+
+  display: flex;
+}
+
+.girl-box {
+  width: 50%;
+}
+
+.name-text-box {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+#smile_girl {
+  width: 90%;
+  margin-left: 20px;
+}
+
+#name {
+  width: 90%;
+}
+
+.text-box {
+  background-color: #30A143;
+  width: 350px;
+  height: 230px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 13px 13px 6px rgba(0, 0, 0, 0.238);
+  text-align: justify;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.text-box p {
   color: white;
+  font-size: 1.1em;
+  font-weight: 200;
+  font-family: "Arial", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.right-box {
+  width: 33%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#logo {
+  width: 244px;
+  height: 80px;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.title h2{
+  font-family: 'Lilita one', sans-serif;
+  font-size: 3.2em;
+}
+
+.title h3{
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.right-box a {
+  color: #1C31BA;
+  text-decoration: none;
+  text-align: center;
 }

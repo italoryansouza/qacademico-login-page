@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
+.input {
+    background-color: #F1F8F0;
+    padding: 10px 10px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input::placeholder {
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.1em;
+}
